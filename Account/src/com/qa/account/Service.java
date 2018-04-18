@@ -23,6 +23,9 @@ public class Service {
 		if(accountMap.containsKey(accNum)) {
 			System.out.println(accountMap.get(accNum).printAccount());
 		}
+		else {
+			System.out.println("Account does not exist");
+		}
 	}
 	
 	public HashMap<Integer,Account> getAccountMap() {

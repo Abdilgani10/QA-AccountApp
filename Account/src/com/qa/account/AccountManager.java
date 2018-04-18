@@ -17,6 +17,7 @@ public class AccountManager {
 		service.addAccount(Ryan);
 		service.addAccount(Bryan);
 		service.retrieveAccount(1);
+		service.retrieveAccount(4);
 		accountsToJSON(service);
 		
 	
