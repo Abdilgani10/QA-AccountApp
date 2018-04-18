@@ -16,6 +16,13 @@ public class Account {
 	public int getAccountNumber(){
 		return accountNumber;
 	}
+	public String getLastName(){
+		return lastName;
+	}
+	
+	public String getFirstName(){
+		return firstName;
+	}
 	
 	public String printAccount() {
 		return firstName + " "+lastName+" " + accountNumber;
