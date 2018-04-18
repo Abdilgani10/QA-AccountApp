@@ -18,12 +18,12 @@ public class AccountManager {
 		service.addAccount(Bryan);
 		service.retrieveAccount(1);
 		service.retrieveAccount(4);
-		accountsToJSON(service);
+		System.out.print(accountsToJSON(service));
 		
 	
 	}
 	
-	private static void accountsToJSON(Service service){
+	public static String accountsToJSON(Service service){
 		String json = "";
 		
 	
@@ -46,7 +46,7 @@ public class AccountManager {
 			
 		}
 		
-		System.out.println(json);
+		return json;
 		
 	}
 	

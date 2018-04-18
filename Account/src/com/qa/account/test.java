@@ -23,5 +23,10 @@ import org.junit.Test;
 		service.addAccount(Bryan);
 		assertEquals(1,service.getAccountMap().size());
 	}
+	@Test
+	public void accountsToJSONtest() {
+		service.addAccount(Ryan);
+		assertEquals("{\"firstName\":\"Ryan\",\"lastName\":\"Prince\",\"accountNumber\":1}",AccountManager.accountsToJSON(service));
+	}
 
 }
