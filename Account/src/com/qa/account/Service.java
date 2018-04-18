@@ -25,5 +25,8 @@ public class Service {
 		}
 	}
 	
+	public HashMap<Integer,Account> getAccountMap() {
+		return this.accountMap;
+	}
 
 }
